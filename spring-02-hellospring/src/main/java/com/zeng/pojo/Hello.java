@@ -1,10 +1,14 @@
-package com.zeng.dao;
+package com.zeng.pojo;
 
 public class Hello {
     private String str;
 
     public Hello(String str) {
         this.str = str;
+    }
+
+    public Hello() {
+
     }
 
     public String getStr() {
@@ -22,3 +26,4 @@ public class Hello {
                 '}';
     }
 }
+

@@ -4,6 +4,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-
+    <bean id="hello" class="com.zeng.pojo.Hello">
+            <property name="str" value="String"/>
+    </bean>
 
 </beans>
