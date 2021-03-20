@@ -6,7 +6,22 @@
 
     <groupId>org.example</groupId>
     <artifactId>Spring-Study</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>spring-01-ioc1</module>
+        <module>spring-02-hellospring</module>
+    </modules>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.2.0.RELEASE</version>
+        </dependency>
 
+
+    </dependencies>
 
 </project>
