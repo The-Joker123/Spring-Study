@@ -3,12 +3,14 @@ import com.zeng.Service.UserServiceImpl;
 import com.zeng.dao.UserDao;
 import com.zeng.dao.UserDaoImpl;
 import com.zeng.dao.UserDaoMySqlImpl;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MyTest {
     public static void main(String[] args) {
-        UserService userService=new UserServiceImpl();
-        ((UserServiceImpl) userService).setUserDao(new UserDaoMySqlImpl());
-        userService.getUsers();
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans.xml");
+        UserServiceImpl userServiceImpl = (UserServiceImpl) applicationContext.getBean("UserServiceImpl");
+        userServiceImpl.getUsers();
     }
 
 }
