@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean id="user" class="com.zeng.pojo.User">-->
+<!--        <property name="name" value="曾自喜"></property>-->
+<!--    </bean>-->
+<!--    第一种下标为0-->
+<!--<bean id="user" class="com.zeng.pojo.User">-->
+<!--    <constructor-arg index="0" value="曾自喜"></constructor-arg>-->
+<!--</bean>-->
+<!--<bean id="user" class="com.zeng.pojo.User">-->
+<!--    <constructor-arg type="java.lang.String" value="曾自喜String"></constructor-arg>-->
+<!--</bean>-->
+<!--<bean id="user" class="com.zeng.pojo.User">-->
+<!--    <constructor-arg name="name" value="曾自喜参数类型"></constructor-arg>-->
+<!--</bean>-->
+    <bean id="userT" class="com.zeng.pojo.UserT">
+
+    </bean>
+</beans>
