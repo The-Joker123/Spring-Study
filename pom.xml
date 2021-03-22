@@ -12,6 +12,7 @@
         <module>spring-01-ioc1</module>
         <module>spring-02-hellospring</module>
         <module>spring-03-ioc2</module>
+        <module>spring-04-di</module>
     </modules>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->

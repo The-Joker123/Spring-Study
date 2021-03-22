@@ -20,4 +20,8 @@
     <bean id="userT" class="com.zeng.pojo.UserT">
 
     </bean>
+
+<!--    id:bean的唯一标识符，也就是相当于我们学的对象名
+        class:bean 对象所对应的全限定名：包名+类型
+        name:也是别名，而且name可以同时-->
 </beans>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="addr" class="com.zeng.pojo.Address">
+        <property name="address" value="天津"></property>
+    </bean>
+   <bean id="student" class="com.zeng.pojo.Student">
+<!--       第一种：普通值注入-->
+      <property name="name" value="曾自喜Studet"></property>
+       <property name="address" ref="addr"></property>
+       <property name="books" >
+           <array>
+               <value>1</value>
+               <value>2</value>
+               <value>3</value>
+               <value>4</value>
+           </array>
+       </property>
+
+       <property name="hobbys">
+           <list>
+               <value>听歌</value>
+               <value>看电影</value>
+               <value>爬山</value>
+           </list>
+       </property>
+
+       <property name="card">
+           <map>
+               <entry key="中国邮政" value="456456456465456"/>
+               <entry key="建设" value="1456682255511"/>
+           </map>
+       </property>
+
+       <property name="games">
+           <set>
+               <value>LOL</value>
+               <value>BOB</value>
+               <value>COC</value>
+           </set>
+       </property>
+       <property name="wife"><null/></property>
+
+       <property name="info">
+           <props>
+               <prop key="学号">20190604</prop>
+               <prop key="性别">男</prop>
+               <prop key="姓名">小明</prop>
+           </props>
+       </property>
+    </bean>
+
+
+</beans>
