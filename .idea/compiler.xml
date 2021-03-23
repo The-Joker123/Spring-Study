@@ -10,6 +10,7 @@
         <module name="spring-02-hellospring" />
         <module name="spring-03-ioc2" />
         <module name="spring-04-di" />
+        <module name="spring-05-AutoWiring" />
       </profile>
     </annotationProcessing>
   </component>
