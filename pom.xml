@@ -15,6 +15,7 @@
         <module>spring-04-di</module>
         <module>spring-05-AutoWiring</module>
         <module>spring-06-anno</module>
+        <module>spring-07-appconfig</module>
     </modules>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->

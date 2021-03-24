@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-05-AutoWiring" />
         <module name="spring-01-ioc1" />
+        <module name="spring-07-appconfig" />
         <module name="spring-04-di" />
         <module name="spring-03-ioc2" />
         <module name="spring-06-anno" />
