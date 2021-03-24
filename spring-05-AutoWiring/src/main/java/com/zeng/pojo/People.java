@@ -1,7 +1,11 @@
 package com.zeng.pojo;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class People {
+    @Autowired
     private Cat cat;
+    @Autowired
     private Dog dog;
     private String str;
 

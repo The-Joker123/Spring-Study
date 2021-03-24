@@ -3,8 +3,22 @@
 #### 介绍
 解决企业应用开发的复杂性
 
-#### 软件架构
-软件架构说明
+#### 常用依赖
+ <dependencies>
+      
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.2.0.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
 
 
 #### 安装教程
