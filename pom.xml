@@ -16,6 +16,7 @@
         <module>spring-05-AutoWiring</module>
         <module>spring-06-anno</module>
         <module>spring-07-appconfig</module>
+        <module>spring-08-proxy</module>
     </modules>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
