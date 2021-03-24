@@ -14,6 +14,7 @@
         <module>spring-03-ioc2</module>
         <module>spring-04-di</module>
         <module>spring-05-AutoWiring</module>
+        <module>spring-06-anno</module>
     </modules>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
