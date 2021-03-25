@@ -9,4 +9,5 @@ public class Proxy implements Subject {
         }
         realSubject.Request();
     }
+    //测试
 }
