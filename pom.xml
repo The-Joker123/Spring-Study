@@ -18,6 +18,7 @@
         <module>spring-07-appconfig</module>
         <module>spring-08-proxy</module>
         <module>spring-09-aop</module>
+        <module>spring-10-mybatis</module>
     </modules>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
@@ -39,6 +40,7 @@
             <artifactId>aspectjweaver</artifactId>
             <version>1.9.6</version>
         </dependency>
+
     </dependencies>
 
 </project>
