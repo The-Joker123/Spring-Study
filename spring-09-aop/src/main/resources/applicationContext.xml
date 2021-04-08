@@ -13,6 +13,8 @@
     <bean id="log" class="com.zeng.log.log"/>
 <!--    <bean id="afterLog" class="com.zeng.log.AfterLog"/>-->
 
+
+<!--    方式一-->
     <!--aop的配置-->
 <!--    <aop:config>-->
 <!--        &lt;!&ndash;切入点 expression:表达式匹配要执行的方法&ndash;&gt;-->
@@ -21,16 +23,25 @@
 <!--        <aop:advisor advice-ref="log" pointcut-ref="pointcut"/>-->
 <!--&lt;!&ndash;        <aop:advisor advice-ref="afterLog" pointcut-ref="pointcut"/>&ndash;&gt;-->
 <!--    </aop:config>-->
-    <bean id="diy" class="com.zeng.diy.DiyPointCut"/>
-    <aop:config>
-<!--        自定义切面，ref要引用的类-->
-        <aop:aspect ref="diy">
-<!--切入点-->
-            <aop:pointcut id="point" expression="execution(* com.zeng.service.UserServiceImpl.*(..))"/>
-<!--            通知-->
-            <aop:before method="before" pointcut-ref="point"></aop:before>
-            <aop:after method="after" pointcut-ref="point"></aop:after>
-        </aop:aspect>
 
-    </aop:config>
+
+<!--    方式二-->
+<!--    <bean id="diy" class="com.zeng.diy.DiyPointCut"/>-->
+<!--    <aop:config>-->
+<!--&lt;!&ndash;        自定义切面，ref要引用的类&ndash;&gt;-->
+<!--        <aop:aspect ref="diy">-->
+<!--&lt;!&ndash;切入点&ndash;&gt;-->
+<!--            <aop:pointcut id="point" expression="execution(* com.zeng.service.UserServiceImpl.*(..))"/>-->
+<!--&lt;!&ndash;            通知&ndash;&gt;-->
+<!--            <aop:before method="before" pointcut-ref="point"></aop:before>-->
+<!--            <aop:after method="after" pointcut-ref="point"></aop:after>-->
+<!--        </aop:aspect>-->
+
+<!--    </aop:config>-->
+
+
+<!--    方式三-->
+    <bean id="annotationPointCut" class="com.zeng.diy.AnnotationPointCut"/>
+    <aop:aspectj-autoproxy/>
+
 </beans>
