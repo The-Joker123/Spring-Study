@@ -17,4 +17,8 @@ public class UserMapperIml implements UserMapper {
         UserMapper mapper=sqlSession.getMapper(UserMapper.class);
         return mapper.selectuser();
     }
+
+
+
+
 }

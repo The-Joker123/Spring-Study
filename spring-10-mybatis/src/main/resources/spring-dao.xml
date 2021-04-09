@@ -37,5 +37,8 @@
 <bean id="userMapper" class="com.zeng.mapper.UserMapperIml">
     <property name="sqlSession" ref="sqlSession"></property>
 </bean>
+    <bean id="userMapper2" class="com.zeng.mapper.UserMapperimi2">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
 
 </beans>
